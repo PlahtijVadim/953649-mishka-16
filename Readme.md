@@ -1,9 +1,7 @@
-# Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
+﻿# Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Вадим Плахтий](https://up.htmlacademy.ru/adaptive/16/user/953649).
-* Наставник: `Неизвестно`.
-
----
+* [Андрей Ефимов](https://htmlacademy.ru/profile/efiand).
 
 **Обратите внимание, что папка с вашими исходными файлами — `source/`.**
 
