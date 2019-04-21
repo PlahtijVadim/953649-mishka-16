@@ -1,1 +1,28 @@
-body { background: red; }
+@font-face {
+  font-family:"Opensansbold";
+  src: url("../fonts/opensansbold.woff2") format("woff2");
+  src: url("../fonts/opensansbold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family:"Opensans";
+  src: url("../fonts/opensans.woff2") format("woff2");
+  src: url("../fonts/opensans.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import "page-header.less";
+@import "main-page.less";
+@import "product-list.less";
+@import "for-order.less";
+@import "about.less";
+@import "reviews.less";
+@import "contacts.less";
+@import "page-footer.less";
+
+.visually-hidden {
+  display: none;
+}
