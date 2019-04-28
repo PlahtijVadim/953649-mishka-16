@@ -1,23 +1,4 @@
-@font-face {
-  font-family: "Opensansbold";
-  src: url("../fonts/opensansbold.woff2") format("woff2");
-  src: url("../fonts/opensansbold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Opensans";
-  src: url("../fonts/opensans.woff2") format("woff2");
-  src: url("../fonts/opensans.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-html {
-  font-family: "OpenSans", "Arial", sans-serif;
-}
-
+@import "global.less";
 @import "page-header.less";
 @import "main-page.less";
 @import "product-list.less";
@@ -33,7 +14,14 @@ html {
 @import "button.less";
 @import "knitting.less";
 @import "filters.less";
-
-.visually-hidden {
-  display: none;
-}
+@import "helpers.less";
+@import "blue.heading.less";
+@import "data.less";
+@import "page-index.less";
+@import "page-catalog.less";
+@import "page-form.less";
+@import "main-nav.less";
+@import "site-list.less";
+@import "server-list.less";
+@import "things.less";
+@import "toys.less";
