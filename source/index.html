@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>Mishka Index</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
       <a class="page-header__logo">
-        <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="86" height="35" alt="Интернет магазин Мишка">
+        <img class="page-header__logo-image" src="img/mishka-logo-mobile-svg-copy.svg" width="86" height="35" alt="Интернет магазин Мишка">
       </a>
       <nav class="main-nav">
         <button class="main-nav__switch">
@@ -32,12 +33,14 @@
       </nav>
     </header>
     <main class="main-page">
-      <h1 class="main-page__title">Милые штуки ручной работы для дома</h1>
+      <div class="main-page__title page-index">
+        <h1 class="main-page__title">Милые штуки ручной работы для дома</h1>
+      </div>
       <ul class="product-list">
-        <li class="product-list__item">
+        <li class="product-list__item things">
           <a class="product-list__link_interior" href="#">Предметы интерьера</a>
         </li>
-        <li class="product-list__item">
+        <li class="product-list__item toys">
           <a class="product-list__link_toys" href="#">Детские игрушки</a>
         </li>
       </ul>
@@ -53,11 +56,11 @@
           <dt>Высота</dt>
           <dd>15 см</dd>
           <dt class="visually-hidden">Изображение</dt>
-          <dd><img class="for-order__image" src="img/..." width="260" height="360" alt=""></dd>
+          <dd><img class="for-order__image" src="img/triple-set-mobile.png" width="260" height="360" alt=""></dd>
           <dt>Цена:</dt>
           <dd>990 руб.</dd>
         </dl>
-        <a class="for-order__order" href="#">Заказать</a>
+        <a class="for-order__order button" href="#">Заказать</a>
       </section>
       <section class="about">
         <h2 class="about__title">Коротко о нас</h2>
@@ -82,18 +85,16 @@
           фотографии сразу стали более стильными,
           а также набирают больше лайков!
         </p>
-        <p class="reviews__text">
-          Анастасия Красильникова
-          <a class="reviews__profile-link" href="#">@misssssiskras</a>
-        </p>
-        <ul class="reviews-buttons">
-          <li class="reviews-buttons__item">
-            <a class="reviews-buttons__back" href="#">
+        <p class="reviews__text-name">Анастасия Красильникова</p>
+        <a class="reviews__profile-link" href="#">@misssssiskras</a>
+        <ul class="reviews__buttons">
+          <li class="reviews__buttons-item">
+            <a class="reviews__buttons-back" href="#">
               <span class="visually-hidden">Назад</span>
             </a>
           </li>
-          <li class="reviews-buttons__item">
-            <a class="reviews-buttons__next" href="#">
+          <li class="reviews__buttons-item">
+            <a class="reviews__buttons-next" href="#">
               <span class="visually-hidden">Вперед</span>
             </a>
           </li>
@@ -102,13 +103,13 @@
       </section>
       <div class="main-page__contacts contacts">
         <b class="contacts__title">Контакты</b>
-        <dl class="contacts-info">
+        <dl class="contacts__info">
           <dt>e-mail:</dt>
-          <dd><a class="contacts-info__link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></dd>
+          <dd><a class="contacts__info-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></dd>
           <dt>адрес:</dt>
           <dd>г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</dd>
         </dl>
-        <img class="contacts__image map" src="img/map.jpg" width="320" height="457" alt="Карта">
+        <img class="contacts__image map" src="img/map-mobile-1-x.png" width="320" height="457" alt="Карта">
         <a class="contacts__write button" href="#">Напишите нам</a>
       </div>
     </main>
@@ -116,7 +117,7 @@
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
               <span class="visually-hidden">Мы в Вконтакте</span>
             </a>
           </li>
@@ -126,7 +127,7 @@
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
+            <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">
               <span class="visually-hidden">Мы в Инстаграме</span>
             </a>
           </li>
@@ -134,7 +135,9 @@
       </div>
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано:</b>
-        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="visually-hidden">HTML Academy</span>
+        </a>
       </div>
     </footer>
   </body>

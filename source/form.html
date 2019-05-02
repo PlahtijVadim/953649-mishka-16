@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>Mishka Form</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
       <a class="page-header__logo">
-        <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="86" height="35" alt="Интернет магазин Мишка">
+        <img class="page-header__logo-image" src="img/mishka-logo-mobile-svg-copy.svg" width="86" height="35" alt="Интернет магазин Мишка">
       </a>
       <nav class="main-nav">
         <button class="main-nav__switch">
@@ -33,7 +34,7 @@
     </header>
     <main class="main-page">
       <section class="knitting">
-        <h1 class="knitting__title">Вязание на заказ</h1>
+        <h1 class="knitting__title page-form">Вязание на заказ</h1>
         <p class="knitting__text">
           Мы будем рады воплотить в жизнь
           ваши пожелания! Заполните простую
@@ -43,49 +44,52 @@
         <div class="filters">
           <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="radio-checkbox">
-            <legend class="form-legend">Тип</legend>
+            <legend class="form-legend blue-heading">Тип</legend>
             <input class="filter-radio" type="radio" value="Аксессуар для интерьера" name="type" id="accessory" checked>
-            <label for="accessory">Аксессуар для интерьера</label>
+            <label for="accessory" class="filters-text">Аксессуар для интерьера</label>
             <input class="filter-radio" type="radio" value="Детская игрушка" name="type" id="toy">
-            <label for="toy">Детская игрушка</label>
+            <label for="toy" class="filters-text">Детская игрушка</label>
           </fieldset>
           <fieldset>
-            <legend class="form-legend">Цвет</legend>
+            <legend class="form-legend blue-heading">Цвет</legend>
             <input class="filter-checkbox" type="checkbox" name="white" id="white" checked>
-            <label for="white">Белый</label>
+            <label for="white" class="filter-text">Белый</label>
             <input class="filter-checkbox" type="checkbox" name="grey" id="grey">
-            <label for="grey">Серый</label>
+            <label for="grey" class="filter-text">Серый</label>
             <input class="filter-checkbox" type="checkbox" name="tiffani" id="tiffani" checked>
-            <label for="tiffani">"Тиффани"</label>
+            <label for="tiffani" class="filter-text">"Тиффани"</label>
             <input class="filter-checkbox" type="checkbox" name="black" id="black" checked>
-            <label for="black">Черный</label>
+            <label for="black" class="filter-text">Черный</label>
             <input class="filter-checkbox" type="checkbox" name="pink" id="pink">
-            <label for="pink">Розовый</label>
+            <label for="pink" class="filter-text">Розовый</label>
             <input class="filter-checkbox" type="checkbox" name="orange" id="orange">
-            <label for="orange">Оранжевый</label>
+            <label for="orange" class="filter-text">Оранжевый</label>
           </fieldset>
           </form>
         </div>
         <div class="data">
-          <h2 class="data__title">ФИО</h2>
-          <form class="data-form" action="https://echo.htmlacademy.ru" method="post">Имя:
+          <h2 class="data__title blue-heading">Фио</h2>
+          <form class="data-form" action="https://echo.htmlacademy.ru" method="post">
+            <span class="filter-text">Имя:</span>
             <input class="data-form__name" type="text" name="name" placeholder="Введите ваше имя*">
           </form>
-          <form class="data-form" action="https://echo.htmlacademy.ru" method="post">Фамилия:
+          <form class="data-form" action="https://echo.htmlacademy.ru" method="post">
+            <span class="filter-text">Фамилия:</span>
             <input class="data-form__surname" type="text" name="surname" placeholder="Укажите фамилию*">
           </form>
-          <form class="data-form" action="https://echo.htmlacademy.ru" method="post">Отечество:
+          <form class="data-form" action="https://echo.htmlacademy.ru" method="post">
+            <span class="filter-text">Отечество:</span>
             <input class="data-form__panronymic" type="text" name="panronymic" placeholder="Отчество, если желаете">
           </form>
-          <h2 class="data__title">ТЕЛ</h2>
+          <h2 class="data__title blue-heading">Тел</h2>
           <form class="data-form" action="https://echo.htmlacademy.ru" method="post">
             <input class="data-form__phone" type="number" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
           </form>
-          <h2 class="data__title">E-MAIL</h2>
+          <h2 class="data__title blue-heading">E-mail</h2>
           <form class="data-form" action="https://echo.htmlacademy.ru" method="post">
             <input class="data-form__email" type="email" name="email" placeholder="Ваш Email*">
           </form>
-          <h2 class="data__title">ДОП</h2>
+          <h2 class="data__title blue-heading">Доп</h2>
           <form class="data-form" action="https://echo.htmlacademy.ru" method="post">
             <input class="data-form__extra" type="text" name="extra" placeholder="Опишите все ваши пожедания к заказу">
           </form>
@@ -98,7 +102,7 @@
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
               <span class="visually-hidden">Мы в Вконтакте</span>
             </a>
           </li>
@@ -108,7 +112,7 @@
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
+            <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">
               <span class="visually-hidden">Мы в Инстаграме</span>
             </a>
           </li>
@@ -116,7 +120,9 @@
       </div>
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано:</b>
-        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="visually-hidden">HTML Academy</span>
+        </a>
       </div>
     </footer>
   </body>
