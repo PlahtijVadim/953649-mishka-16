@@ -1,0 +1,93 @@
+.intro {
+  margin-bottom: 30px;
+  padding-top: 70px;
+  padding-bottom: 76px;
+  border-top: 1px solid #ececec;
+  background-color: #f1f1f1;
+}
+
+.intro--main-page {
+  margin-bottom: 46px;
+  background: 0 0;
+}
+
+.intro--order {
+  margin-bottom: 22px;
+}
+
+.intro__title {
+  margin: 0 auto;
+  font-size: 27px;
+  line-height: 30px;
+  font-family: "Open Sans Bold", "Arial", sans-serif;
+  color: #000000;
+  text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .intro {
+    position: relative;
+    margin-bottom: 59px;
+    padding-top: 95px;
+    padding-bottom: 100px;
+  }
+
+  .intro::after {
+    position: absolute;
+    content: "";
+    display: block;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 24px;
+    background: url("../img/bg-zigzag-fill.svg") repeat-x;
+    background-size: 768px 26px;
+  }
+
+  .intro--main-page {
+    margin-bottom: 272px;
+    padding-top: 154px;
+    background: 0 0;
+  }
+
+  .intro--main-page::after {
+    display: none;
+  }
+
+  .intro--order {
+    margin-bottom: 60px;
+    padding-bottom: 92px;
+  }
+
+  .intro__title {
+    width: 550px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .intro {
+    margin-bottom: 110px;
+    padding-bottom: 120px;
+  }
+
+  .intro::after {
+    height: 34px;
+    background-size: 1150px 34px;
+  }
+
+  .intro--main-page {
+    margin-bottom: 240px;
+  }
+
+  .intro--order {
+    margin-bottom: 105px;
+  }
+
+  .intro__title {
+    width: 650px;
+    font-size: 53px;
+    line-height: 57px;
+  }
+}

@@ -1,0 +1,38 @@
+.logo {
+  align-self: center;
+  display: block;
+  padding-top: 21px;
+  padding-bottom: 22px;
+  cursor: pointer;
+}
+
+.logo img {
+  width: 86px;
+  height: 35px;
+}
+
+.logo img:hover {
+  opacity: 0.6;
+}
+
+.logo img:active {
+  opacity: 0.3;
+}
+
+@media (min-width: @tablet-width) {
+  .logo {
+    padding: 0;
+  }
+
+  .logo img {
+    width: 113px;
+    height: 46px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .logo img {
+    width: 149px;
+    height: 72px;
+  }
+}
