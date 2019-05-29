@@ -1,0 +1,185 @@
+.about-us {
+  padding-top: 28px;
+  padding-bottom: 35px;
+  background-color: #ffffff;
+}
+
+.about-us__title {
+  font-size: 25px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #000000;
+  margin: 0 0 33px;
+}
+
+.about-us__features-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.about-us__feature {
+  position: relative;
+  margin-bottom: 30px;
+  padding-top: 53px;
+  font-size: 17px;
+  line-height: 1.18;
+  font-weight: 700;
+  color: #000000;
+}
+
+.about-us__feature:last-child {
+  margin-bottom: 0;
+}
+
+.about-us__feature::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 55px;
+  height: 38px;
+  top: 0;
+  left: -7px;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.about-us__feature::after path {
+  fill: #63d1bb;
+}
+
+.about-us__feature--eco::after {
+  background-image: url("../img/icon-feature-1.svg");
+}
+
+.about-us__feature--price::after {
+  background-image: url("../img/icon-feature-2.svg");
+}
+
+.about-us__feature--heart::after {
+  background-image: url("../img/icon-feature-3.svg");
+}
+
+.about-us__feature--knitting::after {
+  background-image: url("../img/icon-feature-4.svg");
+}
+
+.about-us__feature--rocket::after {
+  background-image: url("../img/icon-feature-5.svg");
+}
+
+.about-us__feature--present::after {
+  background-image: url("../img/icon-feature-6.svg");
+}
+
+.about-us__feature--narrow {
+  width: 195px;
+}
+
+.about-us__feature--wide {
+  width: 210px;
+}
+
+@media (min-width: @tablet-width) {
+  .about-us {
+    padding-top: 48px;
+    padding-bottom: 21px;
+  }
+
+  .about-us__title {
+    font-size: 43px;
+    line-height: 1.16;
+    margin-bottom: 48px;
+  }
+
+  .about-us__features-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .about-us__feature {
+    width: 35%;
+    margin-bottom: 60px;
+    font-size: 20px;
+    line-height: 1.1;
+  }
+
+  .about-us__feature--eco {
+    order: 1;
+    width: 230px;
+    margin-right: 100px;
+  }
+
+  .about-us__feature--price {
+    order: 3;
+    width: 235px;
+    margin-right: 100px;
+  }
+
+  .about-us__feature--knitting {
+    order: 2;
+    width: 250px;
+  }
+
+  .about-us__feature--rocket {
+    order: 4;
+    width: 310px;
+  }
+
+  .about-us__feature--heart {
+    order: 5;
+    margin-right: 100px;
+  }
+
+  .about-us__feature--present {
+    order: 6;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .about-us {
+    padding-top: 60px;
+    padding-bottom: 0;
+  }
+
+  .about-us__title {
+    font-size: 53px;
+    line-height: 1.08;
+    margin-left: 175px;
+  }
+
+  .about-us__features-list {
+    margin-left: 175px;
+  }
+
+  .about-us__feature {
+    width: 240px;
+  }
+
+  .about-us__feature--eco {
+    width: 230px;
+    margin-right: 120px;
+  }
+
+  .about-us__feature--price {
+    width: 240px;
+    margin-right: 110px;
+  }
+
+  .about-us__feature--knitting {
+    width: 255px;
+  }
+
+  .about-us__feature--rocket {
+    width: 310px;
+  }
+
+  .about-us__feature--heart {
+    width: 240px;
+    margin-right: 110px;
+  }
+
+  .about-us__feature--present {
+    width: 240px;
+  }
+}
