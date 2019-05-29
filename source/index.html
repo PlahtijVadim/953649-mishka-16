@@ -97,9 +97,9 @@
             </div>
           </dl>
           <picture>
-            <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
-            <img class="product__picture" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" width="260" height="315" alt="Вязаные корзинки">
+            <source media="(min-width: 1150px)" srcset="img/triple-set-desktop.png 1x, img/triple-set-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/triple-set-tablet.png 1x, img/triple-set-tablet@2x.png 2x">
+            <img class="product__picture" src="img/triple-set-mobile.png" srcset="img/triple-set-mobile@2x.png 2x" width="260" height="315" alt="Вязаные корзинки">
           </picture>
           <div class="product__price">Цена: 990 руб.</div>
           <a class="button  product__button  js-to-cart" href="#" title="Заказать товар">Заказать</a>
@@ -129,8 +129,12 @@
             <cite class="reviews__author">Анастасия Красильникова <span class="reviews__account">@misssssiskras</span></cite>
           </figure>
           <div class="reviews__toggles">
-            <button class="reviews__toggle  reviews__toggle--prev" type="button" title="Предыдущий отзыв">Предыдущий отзыв</button>
-            <button class="reviews__toggle  reviews__toggle--next" type="button" title="Следующий отзыв">Следующий отзыв</button>
+            <button class="reviews__toggle  reviews__toggle--prev" type="button" title="Предыдущий отзыв">
+              <span class="visually-hidden">Предыдущий отзыв</span>
+            </button>
+            <button class="reviews__toggle  reviews__toggle--next" type="button" title="Следующий отзыв">
+              <span class="visually-hidden">Следующий отзыв</span>
+            </button>
           </div>
             <a class="button  reviews__button" href="review-create.html" title="Написать отзыв">Написать</a>
           </div>

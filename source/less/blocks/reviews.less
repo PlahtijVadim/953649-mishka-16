@@ -5,10 +5,21 @@
   background-color: #ffffff;
 }
 
+.reviews::after {
+  position: absolute;
+  content: "";
+  display: block;
+  bottom: 0;
+  height: 6px;
+  background: url("../img/bg-zigzag-line.svg") repeat-x;
+  background-size: auto 6px;
+  transform: rotate(180deg);
+}
+
 .reviews__title {
   font-size: 25px;
-  line-height: 30px;
-  font-family: "Open Sans Bold", "Arial", sans-serif;
+  line-height: 1.2;
+  font-weight: 700;
   color: #000000;
   margin: 0 0 24px;
 }
@@ -19,15 +30,16 @@
 
 .reviews__text {
   margin: 0 0 26px;
-  line-height: 30px;
+  font-size: 15px;
+  line-height: 2;
 }
 
 .reviews__author {
   display: flex;
   flex-direction: column;
   font-size: 17px;
-  line-height: 24px;
-  font-family: "Open Sans Bold", "Arial", sans-serif;
+  line-height: 1.41;
+  font-weight: 700;
   font-style: normal;
   color: #000000;
 }
@@ -35,8 +47,7 @@
 .reviews__account {
   margin-top: 4px;
   font-size: 17px;
-  line-height: 30px;
-  font-family: "Open Sans", "Arial", sans-serif;
+  line-height: 1.76;
   color: #444444;
 }
 
@@ -46,7 +57,7 @@
 }
 
 .reviews__toggle {
-  width: 130px;
+  width: 160px;
   height: 52px;
   padding: 0;
   border: 1px solid #ececec;
@@ -95,7 +106,7 @@
 
   .reviews__title {
     font-size: 43px;
-    line-height: 50px;
+    line-height: 1.16;
     margin-bottom: 50px;
   }
 
@@ -111,10 +122,13 @@
     width: 650px;
     margin-bottom: 56px;
     font-size: 17px;
+    line-height: 1.76;
   }
 
   .reviews__author {
     width: 300px;
+    font-size: 18px;
+    line-height: 1.33;
   }
 
   .reviews__toggles {
@@ -155,7 +169,7 @@
 
   .reviews__title {
     font-size: 53px;
-    line-height: 57px;
+    line-height: 1.08;
     margin-left: 172px;
   }
 
@@ -166,6 +180,8 @@
   .reviews__text {
     width: 800px;
     margin-bottom: 40px;
+    font-size: 17px;
+    line-height: 1.76;
   }
 
   .reviews__button {

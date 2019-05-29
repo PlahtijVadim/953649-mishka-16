@@ -23,8 +23,8 @@
 .catalog-item__title {
   margin: 0 0 4px;
   font-size: 17px;
-  line-height: 24px;
-  font-family: "Open Sans Bold", "Arial", sans-serif;
+  line-height: 1.41;
+  font-weight: 700;
   color: #000000;
 }
 
@@ -39,7 +39,7 @@
 .catalog-item__details {
   margin: 0 0 19px;
   font-size: 13px;
-  line-height: 30px;
+  line-height: 2.31;
 }
 
 .catalog-item__footer {
@@ -51,8 +51,8 @@
 
 .catalog-item__price {
   font-size: 15px;
-  line-height: 24px;
-  font-family: "Open Sans Bold", "Arial", sans-serif;
+  line-height: 1.6px;
+  font-weight: 700;
 }
 
 .catalog-item__cart {
@@ -63,6 +63,11 @@
 }
 
 @media (min-width: @tablet-width) {
+  .catalog-item {
+    display: flex;
+    margin-bottom: 54px;
+  }
+
   .catalog-item__picture {
     width: 50%;
     height: 334px;
