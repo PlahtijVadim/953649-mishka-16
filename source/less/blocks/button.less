@@ -1,14 +1,28 @@
 .button {
-  width: 192px;
-  min-height: 52px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 18px 26px;
-  text-transform: uppercase;
+  display: block;
+  box-sizing: border-box;
+  padding: 14px 0;
+  border: 2px solid #444444;
   font-size: 17px;
-  font-weight: bold;
-  line-height: 0.94;
-  text-align: center;
+  line-height: 1.18;
+  font-weight: 700;
   color: #444444;
-  border: 2px solid;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.button:hover {
+  color: #ffffff;
+  background-color: #444444;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #444444;
+}
+
+.button:focus {
+  outline: 0;
 }

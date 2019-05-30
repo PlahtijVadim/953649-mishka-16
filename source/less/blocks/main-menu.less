@@ -1,0 +1,265 @@
+.main-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+}
+
+.main-menu__button {
+  position: absolute;
+  top: 31px;
+  right: 0;
+  display: block;
+  width: 20px;
+  height: 14px;
+  padding: 0;
+  border: 0;
+  font-size: 0;
+  cursor: pointer;
+}
+
+.main-menu__button--open {
+  background: url("../img/icon-menu-open.svg") no-repeat;
+}
+
+.main-menu__button--close {
+  top: 28px;
+  width: 21px;
+  height: 20px;
+  background: url("../img/icon-menu-close.svg") no-repeat;
+}
+
+.main-menu__button:focus {
+  outline: 0;
+}
+
+.main-menu__button--no-js {
+  display: none;
+}
+
+.main-menu__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  z-index: 2;
+  transform: translate(-50%, 100%);
+  width: 320px;
+}
+
+.main-menu__list--hide {
+  display: none;
+}
+
+.main-menu__list--user {
+  transform: translate(-50%, 200%);
+}
+
+.main-menu__list--extra {
+  display: none;
+}
+
+.main-menu__list--no-js {
+  position: static;
+  transform: none;
+}
+
+.main-menu__link {
+  display: block;
+  padding: 24px 20px 34px 56px;
+  border-top: 1px solid #ececec;
+  font-size: 17px;
+  line-height: 1.41;
+  font-weight: 700;
+  color: #000000;
+  text-decoration: none;
+  background-color: #ffffff;
+}
+
+.main-menu__link:hover svg path {
+  fill: #63d1bb;
+}
+
+.main-menu__link:hover {
+  color: #8d8d8d;
+}
+
+.main-menu__link:active {
+  color: #cacaca;
+}
+
+.main-menu__link:active svg path {
+  fill: #d0f1ea;
+}
+
+.main-menu__link--cart {
+  position: relative;
+}
+
+.main-menu__link--icon-search {
+  position: absolute;
+  left: 31px;
+}
+
+.main-menu__link--icon-cart {
+  position: absolute;
+  left: 28px;
+}
+
+@media (min-width: @tablet-width) {
+  .main-menu {
+    justify-content: space-between;
+  }
+
+  .main-menu__button {
+    display: none;
+  }
+
+  .main-menu__list {
+    display: flex;
+    position: static;
+    transform: none;
+    min-width: 380px;
+  }
+
+  .main-menu__list--main {
+    order: 2;
+    margin-bottom: -42px;
+  }
+
+  .main-menu__list--extra {
+    display: none;
+    min-height: 44px;
+  }
+
+  .main-menu__list--user {
+    justify-content: flex-end;
+  }
+
+  .main-menu__item--main {
+    margin-right: 36px;
+  }
+
+  .main-menu__item--main:nth-child(even) {
+    margin-right: 0;
+  }
+
+  .main-menu__item--user {
+    border-left: 1px solid #ececec;
+  }
+
+  .main-menu__link {
+    padding: 18px 0 0;
+    border: 0;
+    background-color: transparent;
+  }
+
+  .main-menu__link--main {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .main-menu__link--user {
+    min-height: 51px;
+    padding-top: 36px;
+  }
+
+  .main-menu__link--user:nth-child(n+2) {
+    padding-top: 0;
+  }
+
+  .main-menu__link--search {
+    min-width: 82px;
+    font-size: 0;
+    text-align: center;
+  }
+
+  .main-menu__link--cart {
+    padding-top: 32px;
+    padding-bottom: 5px;
+    padding-left: 83px;
+  }
+
+  .main-menu__link--icon-cart {
+    top: 34px;
+    left: 32px;
+  }
+
+  .main-menu__link--user:nth-child(n+2) .main-menu__link--icon-cart {
+    top: 2px;
+  }
+
+  .main-menu__link--icon-search {
+    position: static;
+    left: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-menu__list--main {
+    order: -1;
+    margin-bottom: 0;
+  }
+
+  .main-menu__list--extra {
+    order: 3;
+    display: flex;
+    margin-bottom: -44px;
+  }
+
+  .main-menu__list--user {
+    order: 2;
+  }
+
+  .main-menu__item--main {
+    margin-right: 0;
+  }
+
+  .main-menu__item--main:nth-child(even) {
+    padding-bottom: 5px;
+    padding-left: 35px;
+    border-left: 1px solid #ececec;
+  }
+
+  .main-menu__item--extra:nth-child(odd) .main-menu__link,
+  .main-menu__item--main:nth-child(odd) .main-menu__link {
+    width: 184px;
+  }
+
+  .main-menu__item--extra:nth-child(even) .main-menu__link {
+    padding-left: 35px;
+  }
+
+  .main-menu__link {
+    padding-top: 27px;
+    font-size: 17px;
+    line-height: 1.41;
+  }
+
+  .main-menu__link--main,
+  .main-menu__link--user {
+    min-height: 51px;
+    padding-top: 31px;
+  }
+
+  .main-menu__link--main:nth-child(n+2) {
+    padding-top: 0;
+  }
+
+  .main-menu__link--extra {
+    padding-top: 20px;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .main-menu__link--search {
+    padding-top: 36px;
+    font-size: 0;
+  }
+
+  .main-menu__link--cart {
+    padding-bottom: 5px;
+  }
+}
