@@ -11,7 +11,7 @@
     <header class="page-header">
       <div class="container  page-header__container">
         <nav class="main-menu">
-          <a class="logo">
+          <a class="logo" href="index.html">
             <picture>
               <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
               <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
@@ -239,20 +239,7 @@
         </div>
       </div>
     </footer>
-    <div class="modal  modal--add-to-cart">
-      <h2 class="modal__title">Добавить в корзину</h2>
-      <form class="form  form--modal" action="https://echo.htmlacademy.ru/" method="post">
-        <span class="form__modal-text">Выберите размер:</span>
-        <div class="form__modal-controls">
-          <input class="form__input  form__input--modal-checkbox" type="checkbox" id="s-size" name="s-size">
-          <label class="form__label  form__label--modal-checkbox" for="s-size">S</label>
-          <input class="form__input  form__input--modal-checkbox" type="checkbox" id="m-size" name="m-size">
-          <label class="form__label  form__label--modal-checkbox" for="m-size">M</label>
-          <input class="form__input  form__input--modal-checkbox" type="checkbox" id="l-size" name="l-size">
-          <label class="form__label  form__label--modal-checkbox" for="l-size">L</label>
-        </div>
-        <button class="button  form__modal-button" type="submit" title="Добавить в корзину">Добавить</button>
-      </form>
-    </div>
+    <script src="js/picturefill.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
